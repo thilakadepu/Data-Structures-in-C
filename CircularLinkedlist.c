@@ -64,7 +64,7 @@ void InsertAtPosition(){
     scanf("%d",&position);
     if(position==1){
         InsertAtBegin();
-    }else if(position == Count()){
+    }else if(position == Count()+1){
         InsertAtEnd();
     }
     else if(position < Count()){
@@ -134,7 +134,7 @@ void DeleteAtPosition(){
     }else if(position > Count()){
         printf("\nInvalid Position");
     }else{
-        for(int i=1;i<position-2;i++){
+        for(int i=0;i<position-1;i++){
             temp = temp ->link;
         }
         printf("\n%d is deleted",temp->link->data);
