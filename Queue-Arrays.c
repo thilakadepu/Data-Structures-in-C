@@ -25,7 +25,7 @@ void Delete(){
         front += 1;
         printf("\nDeleted element is : %d",queue[front]);
     }
-    if(front == n-1){
+    if(front == rear){
         front = rear = -1;
     }
 }
